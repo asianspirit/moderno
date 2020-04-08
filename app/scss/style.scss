@@ -83,7 +83,7 @@
     text-align: center;
 
     &-title {
-        @include f700 ;
+        @include f700;
         margin-bottom: 28px;
         font-size: 48px;
         line-height: 72px;
@@ -92,7 +92,7 @@
     &-text {
         margin-bottom: 50px;
         font-size: 20px;
-        @include f500 ;
+        @include f500;
         line-height: 30px;
     }
 
@@ -115,7 +115,7 @@
 
             &::placeholder {
                 color: #90a4ae;
-                @include f500 ;
+                @include f500;
 
             }
         }
@@ -140,7 +140,7 @@
     background-color: $grey;
 }
 
-.products__inner-box{
+.products__inner-box {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -149,7 +149,7 @@
 .products__inner-btn {
     margin-bottom: 60px;
     text-align-last: center;
-    @include f500 ;
+    @include f500;
 
     button {
         padding: 12px 21px;
@@ -161,7 +161,8 @@
         &+button {
             margin-left: 5px;
         }
-        &.mixitup-control-active{
+
+        &.mixitup-control-active {
             background-color: $red;
             color: #fff;
             outline: none;
@@ -190,7 +191,7 @@
         padding: 10px 30px;
         min-height: 90px;
         align-items: center;
-        @include f500 ;
+        @include f500;
         border-bottom: 1px solid #ebeeef;
     }
 
@@ -214,7 +215,7 @@
     &-price {
         font-size: 20px;
         color: $bg;
-        @include f700 ;
+        @include f700;
     }
 
     &-info {
@@ -224,42 +225,48 @@
         justify-content: space-between;
         align-items: center;
     }
-    &-author{
+
+    &-author {
         display: flex;
         align-items: center;
         max-width: 245px;
-        span{
+
+        span {
             font-size: 14px;
-            @include f500 ;
+            @include f500;
         }
-        
-        .avatar{
-         width: 30px;
-         height: 30px;
-         border-radius: 50%;
-         background-position: center;
-         display: inline-block;
-         background-repeat: no-repeat;
-         background-size: cover;
-          margin-right: 14px;
+
+        .avatar {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-position: center;
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-right: 14px;
         }
-        span{
+
+        span {
             font-size: 14px;
-            @include f500 ;
+            @include f500;
         }
     }
-   &-star{
-       font-size: 12px;
-       span{
-           color: $bg;
-       }
-   }
+
+    &-star {
+        font-size: 12px;
+
+        span {
+            color: $bg;
+        }
+    }
 }
 
-.products__bottom-btn{
-    
+.products__bottom-btn {
+
     text-align: center;
-    button{
+
+    button {
         margin: 45px 5px 0px;
         box-shadow: 0px 1px 3px 0px rgba(204, 216, 228, 0.75);
         border: none;
@@ -267,13 +274,14 @@
         color: $bg;
         padding: 20px 30px;
         cursor: pointer;
-        &.mixitup-control-active{
+
+        &.mixitup-control-active {
             background-color: $red;
             color: #fff;
             outline: none;
         }
     }
-    
+
 }
 
 // end products
@@ -283,21 +291,25 @@
 
 
 // start products-slider
-.product-slider{
+.product-slider {
     padding: 110px 0 120px;
-    .slick-dots{
+
+    .slick-dots {
         text-align: center;
         margin-top: 50px;
-        li{
+
+        li {
             margin-left: 3px;
             margin-right: 3px;
             display: inline-block;
-            &.slick-active{
-                button{
+
+            &.slick-active {
+                button {
                     background-color: $green;
                 }
             }
-            button{
+
+            button {
                 border-radius: 50%;
                 background-color: rgb(232, 232, 232);
                 border: none;
@@ -314,80 +326,130 @@
 // end products-slider
 // start advantages
 
-.advantages{
-background-color: $bg;
-padding: 100px 0 110px;
+.advantages {
+    background-color: $bg;
+    padding: 100px 0 110px;
 }
 
-.advantages__title{
+.advantages__title {
     color: #fff;
 }
 
-.advantages__inner{
+.advantages__inner {
     display: flex;
     justify-content: space-between;
 
 }
 
-.advantages__item{
-max-width: 370px;
-text-align: center;
-padding: 0px 15px;
-&:hover{
-.advantages__item-title{
-   color: $green;
-}
-.advantages__item-images{
-    background-color: $green;
-}
-.advantages__item-images{
-    g{
-        fill: #fff;
-    }
-}
-}
-&-images{
-    width: 114px;
-    height: 114px;
-    background-color: #fff;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto 30px;
-    transition: all .5s;
-}
-&-title{
-margin-bottom: 25px;
-font-size: 24px;
-color: #fff;
-@include f500;
-transition: all .5s;
-}
-&-text{
-font-size: 15px;
-}
-}
+.advantages__item {
+    max-width: 370px;
+    text-align: center;
+    padding: 0px 15px;
 
-.icosvg-1{
-    svg{
-      width: 50px;  
+    &:hover {
+        .advantages__item-title {
+            color: $green;
+        }
+
+        .advantages__item-images {
+            background-color: $green;
+        }
+
+        .advantages__item-images {
+            g {
+                fill: #fff;
+            }
+        }
     }
 
+    &-images {
+        width: 114px;
+        height: 114px;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 30px;
+        transition: all .5s;
+    }
+
+    &-title {
+        margin-bottom: 25px;
+        font-size: 24px;
+        color: #fff;
+        @include f500;
+        transition: all .5s;
+    }
+
+    &-text {
+        font-size: 15px;
+    }
 }
 
-.icosvg-2{
-    svg{
+.icosvg-1 {
+    svg {
+        width: 50px;
+    }
+
+}
+
+.icosvg-2 {
+    svg {
         width: 70px;
     }
 
 }
 
-.icosvg-3{
-svg{
-    width: 86px;
-}
+.icosvg-3 {
+    svg {
+        width: 86px;
+    }
 }
 
 
 // end advantages
+
+
+
+// start author
+
+
+
+.author {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__box{
+        max-width: 650px;
+        width: 100%;
+        min-height: 215px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $green;
+    }
+    &__title{
+      font-size: 30px;
+      line-height: 30px;
+      color: #fff;
+      margin-right: 45px;
+      max-width: 260px;
+      span{
+          @include f700;
+      }
+    }
+    &__link{
+      background-color: #fff;
+      font-size: 18px;
+      line-height: 36px;
+      padding: 14px 40px;
+    }
+}
+
+
+// end author

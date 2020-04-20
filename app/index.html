@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -151,7 +151,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <a class="header__btn header__btn-login " href="#">Login</a>
+                                <a class="header__btn header__btn-login " data-fancybox data-src="#modal" href="javascript:;">Login</a>
                                 <a class="header__btn header__btn-register " href="#">Register</a>
                                 <a class="header__btn header__btn-logout header__btn-login--off" href="#">Logout</a>
                             </div>
@@ -1081,7 +1081,22 @@
     </footer>
 
     </div>
-
+<div id="modal">
+    <div class="login__wrapper">
+<div class="login__title">Login</div>
+<form >
+    <label  class=" login__label-name">
+        <input type="text" placeholder="Name" required>
+    </label>
+    <label class=" login__label-pass">
+        <input type="text" placeholder="password" required>
+    </label >
+    <button type="submit">Submit</button>
+    <a class="create-acc" href="#">Create An Account</a>
+    <a class="lost-pass" href="#">Lost Pssword?</a>
+</form>
+</div>
+</div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>

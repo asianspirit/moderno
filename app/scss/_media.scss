@@ -28,6 +28,7 @@
      }
     }
 }
+
 @media (max-width: 840px){
 .menu__list{
     display: none;
@@ -66,6 +67,7 @@
         }
     }
 }
+
 
 @media (max-width: 640px){
 .notification__box,
@@ -154,7 +156,7 @@
 
 
 
-}
+
 
 @media (max-width: 495px){
 .user__info{
@@ -210,5 +212,5 @@
     .menu__list{
         display: block !important;
     }
-
+}
 }

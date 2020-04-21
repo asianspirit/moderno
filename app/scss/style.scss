@@ -2240,6 +2240,204 @@ background-color: #f9f9f9;
 padding: 0 10px;
 }
 }
-
 // end settings
+
+// start profile 
+.profile-status{
+border: 1px solid #d6d6d6;
+color: #707070;
+font-size: 14px;
+padding: 6px 9px 5px 30px ;
+position: relative;
+&::before{
+    position: absolute;
+    content: "";
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    left: 11px;
+    top: 13px;
+
+}
+}
+.profile-on{
+&::before{
+    background-color: $green;
+}
+}
+.profile-off{
+  &::before{
+      background-color: $red;
+  }  
+}
+
+.profile__inner{
+    display: flex;
+    margin-bottom: 30px;
+}
+.profile__aside{
+    margin-right: 30px;
+    max-width: 270px;
+    width: 100%;
+    &.footer__social-link{
+        margin-bottom: 30px;
+    }
+}
+.profile__content{
+    width: 100%;
+}
+
+.profile__aside-btn {
+    margin-bottom: 13px;
+    text-align: center;
+}
+.profile__aside-message {
+    margin-bottom: 17px;
+    font-size: 16px;
+    color: #fff;
+    @include f500;
+    display: block;
+    width: 100%;
+    padding: 18px 10px;
+    position: relative;
+    background-color: $text;
+    box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, 0.75);
+    &::before{
+        content: "\f003";
+        font-family: 'icomoon';
+        position: absolute;
+        font-size: 16px;
+        left: 50px;
+        top: 17px;
+    }
+}
+.profile__aside-following {
+    margin-bottom: 17px;
+    font-size: 16px;
+    color: #fff;
+    @include f700;
+    display: block;
+    width: 100%;
+    background-color: $green;
+    padding: 18px 10px;
+    box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, 0.75);
+}
+.profile__banner{
+padding: 20px;
+border: 1px solid #dedede;
+background-color: #fff;
+margin-bottom: 35px;
+}
+.profile__banner-images{
+background-size: cover;
+min-height: 332px;
+background-position: center;
+background-repeat: no-repeat;
+}
+.profile__items{
+display: flex;
+border: 1px solid #dedede;
+text-align: center;
+}
+.profile__item {
+    width: 25%;
+    background-color: #fff;
+    padding: 20px 5px 17px;
+    &+.profile__item{
+        border-left: 1px solid #dedede;
+    }
+}
+.profile__item-title {
+    font-size: 14px;
+    color: $bg;
+    @include f500;
+}
+.profile__item-content {
+    font-size: 14px;
+    color: #707070;
+    @include f500;
+    &.profile__item-sales {
+        color: $bg;
+    }
+}
+
+.profile-settings{
+.product-one__tabs.settings__tabs {
+   .tabs span{ 
+       font-weight: 500;
+       font-family: 'Roboto', sans-serif !important;
+       color: #707070;
+       position: relative;
+       &.active::before{
+           color: $green;
+       }
+       &::before{
+        position: absolute;
+        top: 15px;
+        left: 27px;
+        font-size: 14px;
+        font-family: 'icomoon';
+        color: #d0d0d0;
+       }
+}
+
+}
+}
+
+.personal-box{
+    background-color: #fff;
+    padding :35px 40px 24px;
+    border: 1px solid #dedede;
+}
+
+.personal-box__title { 
+      margin-bottom: 25px;
+    @include f700;
+    color: $bg;
+    font-size: 20px;
+}
+.personal-box__text {
+    margin-bottom: 20px;
+    p{
+        margin-bottom: 20px;
+        color: #707070;
+    }
+}
+.personal-box__item {
+ 
+}
+.personal-box__item-head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+.personal-box__item-name {
+@include f500;
+font-size: 16px;
+font-style: italic;
+color: $bg;
+}
+.personal-box__item-number {
+font-size: 16px;
+color: $bg;
+@include f700;
+}
+.personal-box__item-line {
+height: 15px;
+background-color: #f4f4f4;
+border-radius: 3px;
+margin-bottom: 23px;
+span{
+    border-radius: 3px;
+    display: block;
+    height: 15px;
+    background-image: url(../images/pro-bar.jpg);
+    background-repeat: repeat;
+}
+}
+
+
+  
+
+// end profile 
 @import 'media';

@@ -144,14 +144,15 @@
     .tutorial__item {
         padding: 0;
         margin-left: -20px;
+         max-width: 100%;
+        flex-basis: calc(50% - 20px);
+        margin-bottom: 20px;
     }
 
     .tutorial__inner {
         flex-wrap: wrap;
         margin-left: 20px;
-        max-width: 100%;
-        flex-basis: calc(50% - 20px);
-        margin-bottom: 20px;
+       
     }
 }
 
@@ -213,7 +214,7 @@
 
     .product-page__content .product__item {
         flex-basis: calc(50% - 20px);
-        margin-left: 20px;
+        margin-left: 30px;
         margin-bottom: 20px;
     }
 

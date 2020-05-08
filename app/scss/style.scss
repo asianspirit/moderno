@@ -200,6 +200,7 @@
     transition: all .3s;
     height: 0;
     overflow: hidden;
+    z-index: 10;
 
     a {
         font-size: 12px;
@@ -367,11 +368,11 @@
     color: $tomato;
 }
 
-.header__btn-menu {
-    .header__menu {
+.header__btn-menu,
+    .menu__btn{
         display: none;
     }
-}
+
 
 
 // end header
